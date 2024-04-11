@@ -1,0 +1,17 @@
+---
+title: "Learning to merge"
+author: "Sarah Liu"
+date: "2024-4-12"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+data(package = "palmerpenguins")
+
+ggplot(penguins, aes(x = bill_depth_mm, y = flipper_length_mm, color = species)) +
+    geom_point()
+```
+
